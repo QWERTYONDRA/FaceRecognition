@@ -1,7 +1,7 @@
 import cv2
   
 # Read the input image
-img = cv2.imread('2.jpeg')
+img = cv2.imread('recognise.jpg')
   
 # Convert into grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -20,6 +20,6 @@ for (x, y, w, h) in faces:
     cv2.imwrite('face.jpg', faces)
       
 # Display the output
-cv2.imwrite('detcted.jpg', img)
+cv2.imwrite('detected.jpg', img)
 cv2.imshow('img', img)
 cv2.waitKey()
